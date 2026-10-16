@@ -6,10 +6,16 @@
   <title>Receta de Budin de limon</title>
   <style>
     body {
-      background-color: #ffd1dc;
+      background-color: hsl(9, 52%, 82%);
       margin: 0;
       font-family: Arial, sans-serif;
+      /* Centramos todo el contenido principal de la página */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 40px;
     }
+
     h1 {
       background-color: #f48fb1;
       color: #000;
@@ -18,6 +24,48 @@
       margin: 0 0 20px 0;
       padding: 15px;
       font-size: 24px;
+      width: 100%; /* Ocupa todo el ancho superior */
+    }
+
+    /* Contenedor general para alinear elementos al centro */
+    .centrado {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    /* Estilo para los títulos de secciones */
+    h2 {
+      margin-top: 30px;
+    }
+
+    img {
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    /* Clases para que las listas (consignas) queden alineadas a la izquierda (borde) */
+    .alineado-izquierda {
+      text-align: left;
+      width: 100%;
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    /* Ajuste para los iframes y enlaces */
+    iframe {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .enlaces-container {
+      text-align: center;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -25,46 +73,46 @@
 
   <h1>Receta de Budin de limon</h1>
 
-  <img src="https://www.rionegro.com.ar/wp-content/uploads/2025/05/budin-limon-2.jpg?w=920" alt="Imagen no disponible" width="250"> 
-  <br>
+  <div class="centrado">
+    <img src="https://www.rionegro.com.ar/wp-content/uploads/2025/05/budin-limon-2.jpg?w=920" alt="Imagen no disponible" width="250"> 
 
-  <h2>Ingredientes</h2>
-  <br>
-  <img src="https://imag.bonviveur.com/ingredientes-del-budin-de-limon.webp" alt="Ingredientes" width="250">
-  <br>
+    <h2>Ingredientes</h2>
+    <img src="https://imag.bonviveur.com/ingredientes-del-budin-de-limon.webp" alt="Ingredientes" width="250">
 
-  <ul>
-    <li>200g de harina</li>
-    <li>100ml de leche</li>
-    <li>2 huevos</li>
-    <li>50g de azúcar</li>
-    <li>1 cucharadita de ralladura de limón</li>
-  </ul>
-  <br>
+    <!-- Lista de ingredientes alineada a la izquierda -->
+    <ul class="alineado-izquierda">
+      <li>200g de harina</li>
+      <li>100ml de leche</li>
+      <li>2 huevos</li>
+      <li>50g de azúcar</li>
+      <li>1 cucharadita de ralladura de limón</li>
+    </ul>
 
-  <h2>Instrucciones</h2>
-  <br>
-  <img src="https://imag.bonviveur.com/budin-de-limon-en-el-plato.webp" alt="Resultado" width="250">
-  <br>
+    <h2>Instrucciones</h2>
+    <img src="https://imag.bonviveur.com/budin-de-limon-en-el-plato.webp" alt="Resultado" width="250">
 
-  <ol>
-    <li>Precalentar el horno a 180°C.</li>
-    <li>En un tazón grande, mezclar la harina, la leche, los huevos, el azúcar y la ralladura de limón.</li>
-    <li>Verter la mezcla en un recipiente para hornear engrasado.</li>
-    <li>Hornear por 30-35 minutos, o hasta que un palillo insertado en el centro salga limpio.</li>
-  </ol>
-  <br>
+    <!-- Instrucciones (consignas) alineadas a la izquierda -->
+    <ol class="alineado-izquierda">
+      <li>Precalentar el horno a 180°C.</li>
+      <li>En un tazón grande, mezclar la harina, la leche, los huevos, el azúcar y la ralladura de limón.</li>
+      <li>Verter la mezcla en un recipiente para hornear engrasado.</li>
+      <li>Hornear por 30-35 minutos, o hasta que un palillo insertado en el centro salga limpio.</li>
+    </ol>
 
-  <!-- Video de YouTube -->
-  <iframe src="https://www.youtube.com/embed/m9IL7-U8Zwk" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-  <br><br>
+    <!-- Video de YouTube -->
+    <iframe src="https://www.youtube.com/embed/m9IL7-U8Zwk" width="560" height="315" frameborder="0" allowfullscreen></iframe>
 
-  <!-- Mapa de Google -->
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4838329.832960682!2d-7.671049363065191!3d52.54473859664539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d91cc122bd%3A0x264183d2f97576a!2sInglaterra!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <p>Links de otras recetas de budin:</p>
-  <a target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiK4Z_E7auXAxWmPrkGHTwAErIQFnoECCMQAQ&url=https%3A%2F%2Fwww.paulinacocina.net%2Fbudin-de-vainilla%2F26485&usg=AOvVaw3VpPfA7IEcBCjriDLsU9mY&opi=89978449">Ver en Gourmet</a><br>
-  <a target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiK4Z_E7auXAxWmPrkGHTwAErIQFnoECDMQAQ&url=https%3A%2F%2Fwww.cocinerosargentinos.com%2Fpasteleria%2F3-recetas-de-budines&usg=AOvVaw2sLQ8Y1Hbdr9BxSWHLkki-&opi=89978449">Ver en Cookpad</a><br>
-  <a target="_blank" href="https://www.google.com/aclk?sa=L&ai=DChsSEwjTiKbE7auXAxWMTEgAHSX9AiYYACICCAIQARoCY2U&co=1&gclid=CjwKCAjw_pzWBhAkEiwAwDCi1YCG-SSCqZ88hYIHWAFfMMYcH6J-c4QPIiNPcESMroaoHcaD64og0hoCXVIQAvD_BwE&cid=CAASZeRofq7RGZjmW2-qf5KElyjVnalVGrS_S5rHXy6wjJ2S_T_Ge8NAphgl2eZuIZFzE113yQXls14qaglcoclCt3yJjrcyPd8y5F986VbtqYU_yaeFkiloMKN3hdgUUskjofVUi65l&cce=2&sig=AOD64_1WaPxLmx4oiKNWn0MjjjW0IlnBzg&q&adurl&ved=2ahUKEwiK4Z_E7auXAxWmPrkGHTwAErIQ0Qx6BAhWEAE">Ver receta Diego Doal</a><br>
-  <a target="_blank" href="https://www.google.com/aclk?sa=L&ai=DChsSEwjTiKbE7auXAxWMTEgAHSX9AiYYACICCAIQABoCY2U&co=1&gclid=CjwKCAjw_pzWBhAkEiwAwDCi1URHlJsoNb_xy-DdJd2UYl9Fxd6ETU6qq5v481mBjTKCv13OdFYGixoC8WoQAvD_BwE&cid=CAASZeRofq7RGZjmW2-qf5KElyjVnalVGrS_S5rHXy6wjJ2S_T_Ge8NAphgl2eZuIZFzE113yQXls14qaglcoclCt3yJjrcyPd8y5F986VbtqYU_yaeFkiloMKN3hdgUUskjofVUi65l&cce=2&sig=AOD64_1uBIKI6GeyLi0evtHl8MeagTzqWg&q&adurl&ved=2ahUKEwiK4Z_E7auXAxWmPrkGHTwAErIQ0Qx6BAhXEAE">Ver en Pastas La Muñeca</a><br>
+    <!-- Mapa de Google -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4838329.832960682!2d-7.671049363065191!3d52.54473859664539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d91cc122bd%3A0x264183d2f97576a!2sInglaterra!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <div class="enlaces-container">
+      <p>Links de otras recetas de budin:</p>
+      <a target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiK4Z_E7auXAxWmPrkGHTwAErIQFnoECCMQAQ&url=https%3A%2F%2Fwww.paulinacocina.net%2Fbudin-de-vainilla%2F26485&usg=AOvVaw3VpPfA7IEcBCjriDLsU9mY&opi=89978449">Ver en Gourmet</a><br>
+      <a target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiK4Z_E7auXAxWmPrkGHTwAErIQFnoECDMQAQ&url=https%3A%2F%2Fwww.cocinerosargentinos.com%2Fpasteleria%2F3-recetas-de-budines&usg=AOvVaw2sLQ8Y1Hbdr9BxSWHLkki-&opi=89978449">Ver en Cookpad</a><br>
+      <a target="_blank" href="https://www.google.com/aclk?sa=L&ai=DChsSEwjTiKbE7auXAxWMTEgAHSX9AiYYACICCAIQARoCY2U&co=1&gclid=CjwKCAjw_pzWBhAkEiwAwDCi1YCG-SSCqZ88hYIHWAFfMMYcH6J-c4QPIiNPcESMroaoHcaD64og0hoCXVIQAvD_BwE&cid=CAASZeRofq7RGZjmW2-qf5KElyjVnalVGrS_S5rHXy6wjJ2S_T_Ge8NAphgl2eZuIZFzE113yQXls14qaglcoclCt3yJjrcyPd8y5F986VbtqYU_yaeFkiloMKN3hdgUUskjofVUi65l&cce=2&sig=AOD64_1WaPxLmx4oiKNWn0MjjjW0IlnBzg&q&adurl&ved=2ahUKEwiK4Z_E7auXAxWmPrkGHTwAErIQ0Qx6BAhWEAE">Ver receta Diego Doal</a><br>
+      <a target="_blank" href="https://www.google.com/aclk?sa=L&ai=DChsSEwjTiKbE7auXAxWMTEgAHSX9AiYYACICCAIQABoCY2U&co=1&gclid=CjwKCAjw_pzWBhAkEiwAwDCi1URHlJsoNb_xy-DdJd2UYl9Fxd6ETU6qq5v481mBjTKCv13OdFYGixoC8WoQAvD_BwE&cid=CAASZeRofq7RGZjmW2-qf5KElyjVnalVGrS_S5rHXy6wjJ2S_T_Ge8NAphgl2eZuIZFzE113yQXls14qaglcoclCt3yJjrcyPd8y5F986VbtqYU_yaeFkiloMKN3hdgUUskjofVUi65l&cce=2&sig=AOD64_1uBIKI6GeyLi0evtHl8MeagTzqWg&q&adurl&ved=2ahUKEwiK4Z_E7auXAxWMTEgAHSX9AiYYACICCAIQ0Qx6BAhXEAE">Ver en Pastas La Muñeca</a>
+    </div>
+  </div>
+
 </body>
 </html>
